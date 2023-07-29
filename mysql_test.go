@@ -8,7 +8,7 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/go-oauth2/oauth2/v4/models"
-	_ "github.com/go-sql-driver/postgres"
+	_ "github.com/lib/pq"
 	. "github.com/smartystreets/goconvey/convey"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/gorp.v2"
@@ -132,7 +132,7 @@ func TestNewStoreWithOpts_ShouldReturnStoreNotNil(t *testing.T) {
 	// ACTION
 	store := NewStoreWithOpts(db,
 		WithTableName(tableName),
-		WithSQLDialect(gorp.MySQLDialect{Engine: "InnoDB", Encoding: "UTF8"}),
+		WithSQLDialect(gorp.{}),
 		WithGCTimeInterval(1000),
 	)
 

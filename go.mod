@@ -6,8 +6,7 @@ require (
 	github.com/go-oauth2/oauth2/v4 v4.5.2
 	github.com/json-iterator/go v1.1.12
 	gopkg.in/gorp.v2 v2.2.0
-  	github.com/DATA-DOG/go-sqlmock v1.5.0
-
+  github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/stretchr/testify v1.8.4
 )
 
