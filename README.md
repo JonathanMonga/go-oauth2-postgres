@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-$ go get -v github.com/JonathanMonga/go-oauth2-postgres/v4
+$ go get -v gopkg.in/JonathanMonga/go-oauth2-postgres.v1
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ $ go get -v github.com/JonathanMonga/go-oauth2-postgres/v4
 package main
 
 import (
-	"github.com/JonathanMonga/go-oauth2-postgres/v4"
+	"gopkg.in/JonathanMonga/go-oauth2-postgres.v1"
 	"github.com/go-oauth2/oauth2/v4/manage"
 
 	_ "github.com/go-sql-driver/postgres"
