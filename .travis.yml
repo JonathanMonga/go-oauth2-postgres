@@ -1,0 +1,16 @@
+language: go
+sudo: false
+go_import_path: gopkg.in/JonathanMonga/go-oauth2-postgres.v1
+go:
+  - 1.9
+services:
+  - postgres
+before_install:
+  - postgres -e 'CREATE DATABASE myapp_test;'
+  - go get -t -v ./...
+
+script:
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
