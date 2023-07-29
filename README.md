@@ -17,7 +17,7 @@ import (
 	"gopkg.in/JonathanMonga/go-oauth2-postgres.v1"
 	"github.com/go-oauth2/oauth2/v4/manage"
 
-	_ "github.com/go-sql-driver/postgres"
+	_ "github.com/lib/pq"
 )
 
 func main() {
