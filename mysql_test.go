@@ -11,7 +11,6 @@ import (
 	_ "github.com/lib/pq"
 	. "github.com/smartystreets/goconvey/convey"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/gorp.v2"
 )
 
 const (
