@@ -11,10 +11,11 @@ import (
 	_ "github.com/lib/pq"
 	. "github.com/smartystreets/goconvey/convey"
 	"github.com/stretchr/testify/assert"
+	"gopkg.in/gorp.v2"
 )
 
 const (
-	dsn = "root:@tcp(127.0.0.1:3306)/myapp_test?charset=utf8"
+	dsn = "postgres://postgres:password@localhost/myapp_test?sslmode=disable"
 )
 
 func TestTokenStore(t *testing.T) {
@@ -131,7 +132,7 @@ func TestNewStoreWithOpts_ShouldReturnStoreNotNil(t *testing.T) {
 	// ACTION
 	store := NewStoreWithOpts(db,
 		WithTableName(tableName),
-		WithSQLDialect(gorp.{}),
+		WithSQLDialect(gorp.PostgresDialect{}),
 		WithGCTimeInterval(1000),
 	)
 
