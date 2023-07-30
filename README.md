@@ -1,11 +1,11 @@
 # Postgres Storage for [OAuth 2.0](https://github.com/go-oauth2/oauth2)
 
-[![ReportCard][reportcard-image]][reportcard-url] [![GoDoc][godoc-image]][godoc-url] [![License][license-image]][license-url]
+[![GoDoc][godoc-image]][godoc-url] [![License][license-image]][license-url]
 
 ## Install
 
 ``` bash
-$ go get -v gopkg.in/JonathanMonga/go-oauth2-postgres.v1
+$ go get -v github.com/JonathanMonga/go-oauth2-postgres
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ $ go get -v gopkg.in/JonathanMonga/go-oauth2-postgres.v1
 package main
 
 import (
-	"gopkg.in/JonathanMonga/go-oauth2-postgres.v1"
+	"github.com/JonathanMonga/go-oauth2-postgres"
 	"github.com/go-oauth2/oauth2/v4/manage"
 
 	_ "github.com/lib/pq"
