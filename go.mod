@@ -1,4 +1,4 @@
-module github.com/JonathanMonga/go-oauth2-postgres/v1
+module github.com/JonathanMonga/go-oauth2-postgres
 
 go 1.20
 
