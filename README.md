@@ -42,10 +42,8 @@ func main() {
 Copyright (c) 2023 Jonathan Monga
 ```
 
-[reportcard-url]: https://goreportcard.com/report/github.com/JonathanMonga/go-oauth2-postgres
-[reportcard-image]: https://goreportcard.com/badge/github.com/JonathanMonga/go-oauth2-postgres
-[godoc-url]: https://godoc.org/gopkg.in/JonathanMonga/go-oauth2-postgres.v1
-[godoc-image]: https://godoc.org/gopkg.in/JonathanMonga/go-oauth2-postgres.v3?status.svg
+[godoc-url]: https://godoc.org/github.com/JonathanMonga/go-oauth2-postgres
+[godoc-image]: https://godoc.org/github.com/JonathanMonga/go-oauth2-postgres?status.svg
 [license-url]: http://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/npm/l/express.svg
 
